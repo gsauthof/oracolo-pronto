@@ -26,6 +26,9 @@ and inconsistencies created by Oracle:
   puts the necessary symbolic links into them such that basic
   user expectations are met and software written for the
   non-instant client doesn't have to change any relative paths.
+- It fixes the Oracle 'Pro C' configuration such that compiling
+  the generated C code works out-of-the-box (without this, obscure
+  compiler errors are generated).
 - A provided `tnsnames.ora` is put into the right path, even when
   some Oracle documentation may confuse the average Oracle DBA.
 
@@ -56,6 +59,13 @@ to just capture the stdout of a dry-run and copy'n'paste it
 into the tickets.
 
 See also `dry-stdout.sh`.
+
+## Portability
+
+Tested on:
+
+- Fedora 27
+- CentOS 7
 
 ## Requirements
 
